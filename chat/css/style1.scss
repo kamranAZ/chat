@@ -1,0 +1,63 @@
+$primary-color: #00a99d;
+$secondary-color: #e1e1e1;
+$main-gray-color:#e5e5e5;
+#chat-mini{
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    background-color:$primary-color ;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    right: 15px;
+    cursor: pointer;
+}
+#Chat{
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #bebebe;
+    &.active{
+        display: none;
+    }
+    header{
+        background: $primary-color;
+        padding: 10px;
+        color: white;
+        width: 400px;
+        border-radius: 5px 5px 0 0;
+        .header-icon{
+            cursor: pointer;
+            margin: 5px;
+        }
+    }
+    main{
+        height: 300px;
+        overflow-y:scroll ;
+        padding: 20px;
+        .message{
+            padding: 10px;
+            max-width: 80%;
+            min-width: 51%;
+            border-radius: 10px;
+            font-size: .9em;
+            position: relative;
+            margin: 20px 0;
+            &.support{
+                background-color: $primary-color;
+                color: white;
+                border-radius:10px;
+                float: left;
+            }
+            .times{
+                position: absolute;
+                top: 100%;
+                right: 15px;
+                color:black;
+            }
+        }
+}
+}
